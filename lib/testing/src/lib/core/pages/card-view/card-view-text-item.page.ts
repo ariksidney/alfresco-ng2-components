@@ -36,7 +36,7 @@ export class CardTextItemPage {
 
     async getFieldValue(): Promise<string> {
         const fieldElement = this.rootElement.element(this.field);
-        return BrowserActions.getInputValue(fieldElement);
+        return BrowserActions.getText(fieldElement);
     }
 
     async checkLabelIsPresent(): Promise<void> {
